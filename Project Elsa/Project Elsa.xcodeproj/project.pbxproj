@@ -56,6 +56,7 @@
 		3AB5F69625CBA92E00BFA359 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		3AB5F69C25CBA98200BFA359 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3AB5F6A225CBA9D100BFA359 /* Default.Settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Default.Settings.xcconfig; sourceTree = "<group>"; };
+		3AB5F6A625CBAB5300BFA359 /* Local.Settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.Settings.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				3AB5F6A225CBA9D100BFA359 /* Default.Settings.xcconfig */,
+				3AB5F6A625CBAB5300BFA359 /* Local.Settings.xcconfig */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
