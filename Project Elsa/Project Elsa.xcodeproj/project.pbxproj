@@ -57,6 +57,7 @@
 		3AB5F69C25CBA98200BFA359 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3AB5F6A225CBA9D100BFA359 /* Default.Settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Default.Settings.xcconfig; sourceTree = "<group>"; };
 		3AB5F6A625CBAB5300BFA359 /* Local.Settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.Settings.xcconfig; sourceTree = "<group>"; };
+		3AB5F6AF25CBB9AF00BFA359 /* Prod.Settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.Settings.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +150,8 @@
 		3A45A4DB25CBA78C00594074 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				3AB5F6B325CBBAFC00BFA359 /* Login */,
 				3AB5F69B25CBA96400BFA359 /* Main */,
-				3AB5F69C25CBA98200BFA359 /* LoginView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -176,6 +177,7 @@
 			children = (
 				3AB5F6A225CBA9D100BFA359 /* Default.Settings.xcconfig */,
 				3AB5F6A625CBAB5300BFA359 /* Local.Settings.xcconfig */,
+				3AB5F6AF25CBB9AF00BFA359 /* Prod.Settings.xcconfig */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -203,6 +205,14 @@
 				3A45A4AC25CBA57900594074 /* Project_ElsaApp.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		3AB5F6B325CBBAFC00BFA359 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5F69C25CBA98200BFA359 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +388,7 @@
 /* Begin XCBuildConfiguration section */
 		3A45A4CC25CBA57A00594074 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB5F6A625CBAB5300BFA359 /* Local.Settings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -439,6 +450,7 @@
 		};
 		3A45A4CD25CBA57A00594074 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB5F6AF25CBB9AF00BFA359 /* Prod.Settings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
