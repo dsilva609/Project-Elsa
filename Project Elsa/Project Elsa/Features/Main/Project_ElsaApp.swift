@@ -11,7 +11,7 @@ import SwiftUI
 struct Project_ElsaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }

@@ -13,6 +13,11 @@
 		3A45A4B425CBA57A00594074 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A45A4B325CBA57A00594074 /* Preview Assets.xcassets */; };
 		3A45A4BF25CBA57A00594074 /* Project_ElsaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45A4BE25CBA57A00594074 /* Project_ElsaTests.swift */; };
 		3A45A4CA25CBA57A00594074 /* Project_ElsaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45A4C925CBA57A00594074 /* Project_ElsaUITests.swift */; };
+		3A45A4F925CBA89C00594074 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45A4F825CBA89C00594074 /* StringExtensions.swift */; };
+		3AB5F68925CBA8D600BFA359 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5F68825CBA8D600BFA359 /* Helpers.swift */; };
+		3AB5F68F25CBA90C00BFA359 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5F68E25CBA90C00BFA359 /* LoginRequest.swift */; };
+		3AB5F69725CBA92E00BFA359 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5F69625CBA92E00BFA359 /* LoginResponse.swift */; };
+		3AB5F69D25CBA98200BFA359 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5F69C25CBA98200BFA359 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,12 @@
 		3A45A4C525CBA57A00594074 /* Project ElsaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project ElsaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A45A4C925CBA57A00594074 /* Project_ElsaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_ElsaUITests.swift; sourceTree = "<group>"; };
 		3A45A4CB25CBA57A00594074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A45A4F825CBA89C00594074 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		3AB5F68825CBA8D600BFA359 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		3AB5F68E25CBA90C00BFA359 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		3AB5F69625CBA92E00BFA359 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		3AB5F69C25CBA98200BFA359 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3AB5F6A225CBA9D100BFA359 /* Default.Settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Default.Settings.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +106,11 @@
 		3A45A4AB25CBA57900594074 /* Project Elsa */ = {
 			isa = PBXGroup;
 			children = (
-				3A45A4AC25CBA57900594074 /* Project_ElsaApp.swift */,
+				3A45A4F725CBA87B00594074 /* Extensions */,
+				3A45A4DB25CBA78C00594074 /* Features */,
+				3A45A4DD25CBA7A000594074 /* Helpers */,
+				3A45A4DC25CBA79800594074 /* Models */,
+				3A45A4DE25CBA7AD00594074 /* Settings */,
 				3A45A4AE25CBA57900594074 /* ContentView.swift */,
 				3A45A4B025CBA57A00594074 /* Assets.xcassets */,
 				3A45A4B525CBA57A00594074 /* Info.plist */,
@@ -128,6 +143,64 @@
 				3A45A4CB25CBA57A00594074 /* Info.plist */,
 			);
 			path = "Project ElsaUITests";
+			sourceTree = "<group>";
+		};
+		3A45A4DB25CBA78C00594074 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5F69B25CBA96400BFA359 /* Main */,
+				3AB5F69C25CBA98200BFA359 /* LoginView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3A45A4DC25CBA79800594074 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5F68D25CBA8F400BFA359 /* Login */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A45A4DD25CBA7A000594074 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5F68825CBA8D600BFA359 /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3A45A4DE25CBA7AD00594074 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5F6A225CBA9D100BFA359 /* Default.Settings.xcconfig */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3A45A4F725CBA87B00594074 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A45A4F825CBA89C00594074 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3AB5F68D25CBA8F400BFA359 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5F68E25CBA90C00BFA359 /* LoginRequest.swift */,
+				3AB5F69625CBA92E00BFA359 /* LoginResponse.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3AB5F69B25CBA96400BFA359 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3A45A4AC25CBA57900594074 /* Project_ElsaApp.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +332,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A45A4F925CBA89C00594074 /* StringExtensions.swift in Sources */,
+				3AB5F69D25CBA98200BFA359 /* LoginView.swift in Sources */,
 				3A45A4AF25CBA57900594074 /* ContentView.swift in Sources */,
+				3AB5F69725CBA92E00BFA359 /* LoginResponse.swift in Sources */,
 				3A45A4AD25CBA57900594074 /* Project_ElsaApp.swift in Sources */,
+				3AB5F68F25CBA90C00BFA359 /* LoginRequest.swift in Sources */,
+				3AB5F68925CBA8D600BFA359 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
