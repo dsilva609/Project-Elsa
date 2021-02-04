@@ -89,6 +89,6 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-"Project Elsa/Project Elsa/Settings/Local.Settings.xcconfig"
-"Project Elsa/Project Elsa/Settings/Prod.Settings.xcconfig"
+Project\ Elsa/Project\ Elsa/Settings/Local.Settings.xcconfig
+Project\ Elsa/Project\ Elsa/Settings/Prod.Settings.xcconfig
 .DS_Store
