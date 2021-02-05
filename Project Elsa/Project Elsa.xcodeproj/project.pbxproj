@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,11 +15,11 @@
 		3A45A4BF25CBA57A00594074 /* Project_ElsaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45A4BE25CBA57A00594074 /* Project_ElsaTests.swift */; };
 		3A45A4CA25CBA57A00594074 /* Project_ElsaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45A4C925CBA57A00594074 /* Project_ElsaUITests.swift */; };
 		3A45A4F925CBA89C00594074 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45A4F825CBA89C00594074 /* StringExtensions.swift */; };
-		3A9CB41325CCF67400B8F668 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 3A9CB41225CCF67400B8F668 /* SwiftKeychainWrapper */; };
 		3AB5F68925CBA8D600BFA359 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5F68825CBA8D600BFA359 /* Helpers.swift */; };
 		3AB5F68F25CBA90C00BFA359 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5F68E25CBA90C00BFA359 /* LoginRequest.swift */; };
 		3AB5F69725CBA92E00BFA359 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5F69625CBA92E00BFA359 /* LoginResponse.swift */; };
 		3AB5F69D25CBA98200BFA359 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5F69C25CBA98200BFA359 /* LoginView.swift */; };
+		78AB53E0093B8962FA038712 /* Pods_Project_Elsa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CCD389165314757757B893 /* Pods_Project_Elsa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		274E7C59EFA8704E11F13764 /* Pods-Project Elsa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Elsa.debug.xcconfig"; path = "Target Support Files/Pods-Project Elsa/Pods-Project Elsa.debug.xcconfig"; sourceTree = "<group>"; };
 		3A18FA7525CCEF93000898A3 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		3A45A4A925CBA57900594074 /* Project Elsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Elsa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A45A4AC25CBA57900594074 /* Project_ElsaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_ElsaApp.swift; sourceTree = "<group>"; };
@@ -61,6 +62,8 @@
 		3AB5F6A225CBA9D100BFA359 /* Default.Settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Default.Settings.xcconfig; sourceTree = "<group>"; };
 		3AB5F6A625CBAB5300BFA359 /* Local.Settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.Settings.xcconfig; sourceTree = "<group>"; };
 		3AB5F6AF25CBB9AF00BFA359 /* Prod.Settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.Settings.xcconfig; sourceTree = "<group>"; };
+		83CCD389165314757757B893 /* Pods_Project_Elsa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_Elsa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06018090A20B04311A2A339 /* Pods-Project Elsa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Elsa.release.xcconfig"; path = "Target Support Files/Pods-Project Elsa/Pods-Project Elsa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A9CB41325CCF67400B8F668 /* SwiftKeychainWrapper in Frameworks */,
+				78AB53E0093B8962FA038712 /* Pods_Project_Elsa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +115,8 @@
 				3A45A4BD25CBA57A00594074 /* Project ElsaTests */,
 				3A45A4C825CBA57A00594074 /* Project ElsaUITests */,
 				3A45A4AA25CBA57900594074 /* Products */,
+				FDD126C1C2B92709B993B97C /* Pods */,
+				A12A6BFC96C58047837BBB50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +241,23 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		A12A6BFC96C58047837BBB50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83CCD389165314757757B893 /* Pods_Project_Elsa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDD126C1C2B92709B993B97C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				274E7C59EFA8704E11F13764 /* Pods-Project Elsa.debug.xcconfig */,
+				C06018090A20B04311A2A339 /* Pods-Project Elsa.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,18 +265,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A45A4CE25CBA57A00594074 /* Build configuration list for PBXNativeTarget "Project Elsa" */;
 			buildPhases = (
+				EA1510CD358399D255168E2C /* [CP] Check Pods Manifest.lock */,
 				3A45A4A525CBA57900594074 /* Sources */,
 				3A45A4A625CBA57900594074 /* Frameworks */,
 				3A45A4A725CBA57900594074 /* Resources */,
+				4061E9379DEDDD7FDFBAADA3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Project Elsa";
-			packageProductDependencies = (
-				3A9CB41225CCF67400B8F668 /* SwiftKeychainWrapper */,
-			);
 			productName = "Project Elsa";
 			productReference = 3A45A4A925CBA57900594074 /* Project Elsa.app */;
 			productType = "com.apple.product-type.application";
@@ -326,9 +347,6 @@
 				Base,
 			);
 			mainGroup = 3A45A4A025CBA57900594074;
-			packageReferences = (
-				3A9CB41125CCF67400B8F668 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
-			);
 			productRefGroup = 3A45A4AA25CBA57900594074 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,6 +383,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4061E9379DEDDD7FDFBAADA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project Elsa/Pods-Project Elsa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project Elsa/Pods-Project Elsa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Project Elsa/Pods-Project Elsa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA1510CD358399D255168E2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project Elsa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A45A4A525CBA57900594074 /* Sources */ = {
@@ -471,7 +531,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -538,6 +598,7 @@
 		};
 		3A45A4CF25CBA57A00594074 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274E7C59EFA8704E11F13764 /* Pods-Project Elsa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -545,6 +606,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Project Elsa/Preview Content\"";
 				DEVELOPMENT_TEAM = RY6NF3WTMP;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Project Elsa/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -561,6 +623,7 @@
 		};
 		3A45A4D025CBA57A00594074 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C06018090A20B04311A2A339 /* Pods-Project Elsa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -568,6 +631,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Project Elsa/Preview Content\"";
 				DEVELOPMENT_TEAM = RY6NF3WTMP;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Project Elsa/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -705,25 +769,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3A9CB41125CCF67400B8F668 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3A9CB41225CCF67400B8F668 /* SwiftKeychainWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3A9CB41125CCF67400B8F668 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
-			productName = SwiftKeychainWrapper;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A45A4A125CBA57900594074 /* Project object */;
 }

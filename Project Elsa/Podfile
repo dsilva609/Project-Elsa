@@ -6,6 +6,6 @@ target 'Project Elsa' do
   use_frameworks!
 
   # Pods for Project Elsa
-  pod 'SwiftKeychainWrapper'
+  pod 'SwiftKeychainWrapper', '4.0.1'
 
 end
