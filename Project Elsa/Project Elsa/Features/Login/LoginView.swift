@@ -64,7 +64,9 @@ struct LoginView: View {
     
             if let data = data {
                 let loginResponse = try! JSONDecoder().decode(LoginResponse.self, from: data)
-                print("Response - \(loginResponse.displayName)")
+                storeAccessToken(forToken: loginResponse.token)
+                storeKeychainValue(forValue: loginResponse.displayName, forKey: "DisplayName")
+                print("Response - \(retrieveKeychainValue(forKey: "DisplayName")!)")
             }
         }
         
